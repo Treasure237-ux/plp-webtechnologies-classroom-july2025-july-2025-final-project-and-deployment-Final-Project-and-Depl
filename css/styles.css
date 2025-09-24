@@ -1,0 +1,94 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color:gray;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:gray;
+  color: #fff;
+  padding: 1rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color:aqua;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  color: aqua;
+  text-align: center;
+  padding: 4rem 2rem;
+  background-image: url('https://assets.grok.com/users/ece4325d-b8a8-4e75-9b7f-9a7b11a5307c/generated/f6d1716b-a72d-4c2b-b9ef-5ba39af271f2/image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.btn {
+  background: #007BFF;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Responsive Menu */
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    padding: 1rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+.nav:hover{
+    text-decoration: underline;
+    color:aqua;
+}
+
+footer{
+    color:aqua;
+}
+
+.logo{
+    text-decoration: underline;
+    color: aqua;
+}
+
+
+.logo:hover,
+.logo.active {
+  color: #ff9800;
+}
